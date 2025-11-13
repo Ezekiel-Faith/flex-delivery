@@ -1,9 +1,9 @@
-import Header from './components/Header';
+import Marketplace from './pages/Marketplace';
 
 function App() {
   return (
     <div className='w-[95%] xl:w-[80%] mx-auto'>
-      <Header />
+      <Marketplace />
     </div>
   );
 }
