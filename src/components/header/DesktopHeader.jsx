@@ -21,7 +21,7 @@ export default function DesktopHeader({ user, notificationCount }) {
           </div>
         </div>
 
-        <div className='relative flex items-center bg-gray-100 rounded-lg h-10 px-3 lg:ml-0 xl:ml-4 w-full max-w-[400px] border'>
+        <div className='relative flex items-center bg-gray-100 rounded-lg h-10 px-3 lg:ml-10 xl:ml-10 w-full max-w-[400px] border'>
           <Search className='w-4 text-gray-500' strokeWidth={3.5} />
           <input
             type='text'
