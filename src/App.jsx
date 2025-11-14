@@ -1,9 +1,9 @@
-import Marketplace from './pages/Marketplace';
+import DeliveryDetails from "./pages/DeliveryDetails";
 
 function App() {
   return (
-    <div className='w-[95%] xl:w-[80%] mx-auto'>
-      <Marketplace />
+    <div className="w-full xl:w-[99%] mx-auto">
+      <DeliveryDetails />
     </div>
   );
 }
