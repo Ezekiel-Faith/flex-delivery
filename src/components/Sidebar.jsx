@@ -118,7 +118,7 @@ function Sub({ label, badge, pill, highlight }) {
 
 export default function Sidebar({ navItems = DEFAULT_NAV_ITEMS }) {
   return (
-    <aside className='flex flex-col justify-between gap-30 w-65 bg-[#1E3A8A] px-4 pb-20  text-white'>
+    <aside className='flex flex-col  gap-30 w-65 bg-[#1E3A8A] px-4 pb-20  text-white'>
       <div className='rounded-xl p-3 bg-[#142f7c] mt-10 '>
         <nav className='h-full'>
           <ul className='space-y-3'>
