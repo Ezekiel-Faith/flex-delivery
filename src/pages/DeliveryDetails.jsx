@@ -11,32 +11,35 @@ const DeliveryDetails = () => {
   return (
     <section className="">
       <Top />
-      <section className="bg-[#e6e6e6] mt-5 mx-auto p-4 sm:p-5 ">
-        <Second />
-        <hr className="border-t border-black opacity-15 mt-4" />
+      <section className="bg-[#d1d1d1] mt-5 p-4 sm:p-5 border border-amber-600">
+        <div className="max-w-[1300px] mx-auto w-full">
+          <Second />
+          <hr className="border-t border-black opacity-15 mt-4" />
 
-        {/* Main content: stack on mobile, row on md+ */}
-        <section className="mt-7 flex flex-col md:flex-row md:items-center gap-1.5">
-          <div>
-            <PicsView />
-          </div>
+          {/* Main content: stack on mobile, row on md+ */}
+          <section className="mt-7 flex flex-col md:flex-row lg:flex-nowrap gap-2 md:justify-center md:items-start">
+            {/* PicsView */}
+            <div className="flex justify-center md:justify-start md:flex-none">
+              <PicsView />
+            </div>
 
-          {/* Make these two sit beside each other on desktop */}
-          <div className="flex flex-col md:flex-row gap-1.5 md:flex-1">
-            <PickupDetails />
-            <PackageDetails />
-          </div>
-        </section>
+            {/* Pickup + Package */}
+            <div className="flex flex-col md:flex-row gap-2 md:flex-1">
+              <PickupDetails />
+              <PackageDetails />
+            </div>
+          </section>
 
-        {/* Seller / Buyer row: stack on mobile */}
-        <section className="mt-7 flex flex-col md:flex-row gap-1.5">
-          <div className="w-full md:w-[434px]">
-            <Seller />
-          </div>
-          <div className="w-full md:w-[434px]">
-            <Buyer />
-          </div>
-        </section>
+          {/* Seller / Buyer row */}
+          <section className="mt-7 md:self-start flex flex-col md:flex-row gap-2 md:justify-start">
+            <div className="w-full md:w-[434px] flex justify-center md:justify-start">
+              <Seller />
+            </div>
+            <div className="w-full md:w-[434px] flex justify-center md:justify-start">
+              <Buyer />
+            </div>
+          </section>
+        </div>
       </section>
     </section>
   );
